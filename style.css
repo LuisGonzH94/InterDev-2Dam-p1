@@ -18,6 +18,7 @@ body {
     background-color: white;
     box-shadow: 0 0 10px lightgray;
 }
+
 /* .position-fixed {
     position: fixed;
     width: 100%;
@@ -157,9 +158,11 @@ a.active {
 /* Estilos de imágenes */
 .imagenes img {
     border-radius: 8px;
-    width: 100%; /*100% porque se ajusta a su padre*/
+    width: 100%;
+    /*100% porque se ajusta a su padre*/
     height: auto;
-    object-fit: cover; /*para que encaje*/
+    object-fit: cover;
+    /*para que encaje*/
     transition: transform 0.3s ease;
 }
 
@@ -179,11 +182,13 @@ a.active {
     text-decoration: none;
     transition: color 0.3s;
 }
+
 .texto1 {
-    a{
+    a {
         font-size: 32px;
     }
 }
+
 .content-desc h1 a:hover {
     color: #0071e3;
 }
@@ -193,8 +198,9 @@ a.active {
     margin: 5px 0;
     color: #666;
 }
+
 .texto1 {
-    p{
+    p {
         margin-top: 25px;
         font-size: 20px;
     }
@@ -215,13 +221,15 @@ a.active {
     grid-row: 2;
     display: flex;
 }
-.item3{
+
+.item3 {
     grid-column: span 1;
     grid-row: 1;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .item4 {
     grid-column: span 2;
     display: flex;
@@ -236,8 +244,21 @@ a.active {
 }
 
 /*---------------------------------------*/
-.text-left {
-    text-align: start;
+.grid-container-ref {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background-color: #7d9cb5;
+    box-shadow: 0 0 10px 0 black;
+    margin: 50px 0;
+    width: 100%;
+}
+.ref-grid-item{
+    background-color: rgba(228, 219, 219, 0.8);
+    padding: 10px 15px;
+}
+.text-bottom {
+    grid-column: 1 / span 2;
 }
 
 .title {
@@ -251,9 +272,9 @@ a.active {
     }
 }
 
-.description {
-    font-size: 14px;
-    color: gray
+.description{
+    column-count: 1;
+    text-align: start;
 }
 
 /*------------------------------------*/
@@ -340,16 +361,18 @@ main {
     img {
         width: 100%;
     }
-    p{
+
+    p {
         font-size: 14px;
         line-height: 1.2;
-        font-family:Geneva, Verdana, sans-serif;
+        font-family: Geneva, Verdana, sans-serif;
         padding: 0 15px 0 15px;
         margin-top: 25px;
         text-align: justify;
         column-count: 2;
         column-gap: 20px;
     }
+
     .bold {
         font-weight: 700;
     }

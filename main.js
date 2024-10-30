@@ -116,7 +116,7 @@ const articles = [
         "image": "https://www.computerworld.com/wp-content/uploads/2024/10/3567767-0-90640600-1729160617-IDG-Germany-Intel-September-News.jpg?quality=50&strip=all&w=1024",
         "title": "Chinese cybersecurity association urges review of Intel products",
         "description": "The Cybersecurity Association of China (CSAC) has urged a security review of Intel products sold in the country, claiming the US semiconductor firm poses ongoing threats to China’s national security and interests.",
-        "date": "2024-10-01T10:22:56Z",
+        "date": "2024-10-30T10:22:56Z",
         "category": "Technology"
     }
 ]
@@ -161,7 +161,7 @@ class RelativeTime extends HTMLElement {
         } else if (days > 30 && months >= 1) {
             aux = `Hace ${months} mes${months > 1 ? 'es' : ''}`
         } else if (days >= 1) {
-            aux = `Hace ${days} día${days > 1 ? 's' : ''}`
+            aux = `Hace ${days} dia${days > 1 ? 's' : ''}`
         } else if (hours >= 1) {
             aux = `Hace ${hours} hora${hours > 1 ? 's' : ''}`
         } else if (minutes >= 1) {

@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="style.css">
+
+<custom-search>
+    <header class="toolbar-container position-fixed">
+        <button class="menu-toggle transparent"><i class="fa-solid fa-bars"></i></button>
+        <div class="logo">
+            <!-- <span class="logo-desc">Leading Headlines Group</span> -->
+            <span >L</span>
+            <span >H</span>
+            <span >G</span>
+        </div>
+        <button class="dialog-search transparent"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </header>
+    <aside id="side-menu" class="side-menu">
+        <ul>
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li><a href="news.html" target="_blank">News</a></li>
+            <li><a href="usElection.html?id=1" target="_blank">US Election</a></li>
+            <li><a href="sport.html?id=5" target="_blank">Sport</a></li>
+            <li><a href="business.html?id=4" target="_blank">Business</a></li>
+            <li><a href="technology.html?id=10" target="_blank">Technology</a></li>
+            <li><a href="culture.html?id=3" target="_blank">Culture</a></li>
+            <li><a href="arts.html?id=8" target="_blank">Arts</a></li>
+            <li><a href="travel.html?id=6" class="active">Travel</a></li>
+            <li><a href="earth.html?id=7" target="_blank">Earth</a></li>
+        </ul>
+    </aside>
+    <dialog>
+        <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        <h1>Search</h1>
+        <input type="search" id="site-search" name="q" />
+        <template>
+            <li>
+                <div class="flex flex-col items-center card">
+                    <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg"
+                        alt="">
+                    <div class="flex flex-col justify-between">
+                        <h5 class="item-title">
+                            <a href="article.html?id={id}">
+                                {value}
+                            </a>
+                        </h5>
+                        <p class="item-description">
+                            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse
+                            chronological order.
+                        </p>
+                        <relative-time time="2024-10-27T06:00:00Z" />
+                    </div>
+                </div>
+            </li>
+        </template>
+
+        <ul id="search-results"></ul>
+    </dialog>
+</custom-search>
+
+<main>
+    <custom-article>
+        <article class="block">
+            <h1>Travel</h1>
+            <relative-time time="1729250766363"></relative-time>
+            <img src="https://placehold.co/768x400/EEE/31343C">
+            <p><span class="bold">For centuries, residents of Emilia-Romagna have disagreed about which of its two main cities invented tortellini, but the truth may be neither did.</span>
+
+                I'm seated at the three-Michelin starred Osteria Francescana, and can't believe my luck. It's been eight years since I first attempted to snag a reservation at the coveted restaurant in Modena, Italy, helmed by Massimo Bottura, one of the world's most influential chefs. I've been to Italy nearly 50 times since 2016, and each visit, I prowl the restaurant's website, even setting alarms at odd hours, to no avail.
+                
+                But one week ago, from my hotel in Tuscany, I saw a 12:30 lunch cancellation and pounced. And now I'm finally here, in a world of chic Gucci wallpaper and dim lighting, about to try the famous 15-course tasting menu for myself.
+                
+                I'm savouring "Tortellini or Dumplings?" – a Korean spin on tortellini in brodo (tortellini soup) where Osteria Francescana serves twisted dumplings in seaweed stock instead of traditional capon broth – when Bottura himself walks in. The desire to eat at one of the world's best restaurants is what initially piqued my interest in this place, but what brought me here tonight is the delicious bite on my spoon: tortellini.
+                
+                Tortellini – a circular-shaped pasta, twisted around a filling of mortadella, prosciutto, pork loin and Parmigiano Reggiano cheese – are the quintessential pasta varietal here in Italy's hilly Emilia-Romagna region. But while there is no question that tortellini hails from Emilia-Romagna, scholars, chefs and locals have bickered for centuries about which of the region's two rival medieval powerhouses can lay claim to the honour: Modena or Bologna?</p>
+        </article>
+    </custom-article>
+</main>
+
+<script src="main.js"></script>
+<script src="https://kit.fontawesome.com/6e515eb09f.js" crossorigin="anonymous"></script>

@@ -1,0 +1,110 @@
+<link rel="stylesheet" href="style.css">
+
+<custom-search>
+    <header class="toolbar-container">
+        <button class="menu-toggle transparent"><i class="fa-solid fa-bars"></i></button>
+        <div class="logo">
+            <!-- <span class="logo-desc">Leading Headlines Group</span> -->
+            <span>L</span>
+            <span>H</span>
+            <span>G</span>
+        </div>
+        <button class="dialog-search transparent"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </header>
+    <aside id="side-menu" class="side-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="article.html" target="_blank">News</a></li>
+            <li><a href="usElection.html" target="_blank">US Election</a></li>
+            <li><a href="sport.html" target="_blank">Sport</a></li>
+            <li><a href="business.html" target="_blank">Business</a></li>
+            <li><a href="technology.html" target="_blank">technology</a></li>
+            <li><a href="culture.html" target="_blank">Culture</a></li>
+            <li><a href="arts.html" target="_blank" class="active">Arts</a></li>
+            <li><a href="travel.html" target="_blank">Travel</a></li>
+            <li><a href="earth.html" target="_blank">Earth</a></li>
+        </ul>
+    </aside>
+    <dialog>
+        <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        <h1>Search</h1>
+        <input type="search" id="site-search" name="q" />
+        <template>
+            <li>
+                <div class="flex flex-col items-center card">
+                    <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg"
+                        alt="">
+                    <div class="flex flex-col justify-between">
+                        <h5 class="item-title">
+                            <a href="article.html?id={id}">
+                                {value}
+                            </a>
+                        </h5>
+                        <p class="item-description">
+                            <a href="article.html?id={description}"></a>
+                            {value}
+                        </p>
+                        <relative-time time="2024-10-15T10:30:56Z" />
+                    </div>
+                </div>
+            </li>
+        </template>
+
+        <ul id="search-results"></ul>
+    </dialog>
+</custom-search>
+
+<main>
+    <custom-article>
+        <article class="block">
+            <h1>News</h1>
+            <relative-time time="1729250766363"></relative-time>
+            <img src="https://placehold.co/768x400/EEE/31343C">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+    </custom-article>
+    <div class="grid-container">
+        <div class="grid-item text-left">
+            <img />
+            <h1 class="title">
+                <a href="article.html?id=1">Climate Activists Push for Carbon Tax With Measure GG, But Critics Warn it
+                    Could Backfire</a>
+            </h1>
+            <p class="description">Lorem San Francisco Chiba Kowloon otaku silent fetishism monofilament girl marketing
+                man courier denim hacker wristwatch rebar. Cartel range-rover meta-assault corrupted numinous tube
+                augmented reality. 3D-printed boat sub-orbital wonton soup corporation bicycle franchise. Tower dolphin
+                8-bit drone physical order-flow garage girl denim crypto-savant vinyl. DIY wristwatch office physical
+                dissident BASE jump computer. </p>
+        </div>
+        <div class="grid-item text-left">
+            <img />
+            <h1 class="title">
+                <a href="article.html?id=2">Musk’s empire risks being targeted by EU for potential X fines</a>
+            </h1>
+            <p class="description">Lorem San Francisco Chiba Kowloon otaku silent fetishism monofilament girl marketing
+                man courier denim hacker wristwatch rebar. Cartel range-rover meta-assault corrupted numinous tube
+                augmented reality. 3D-printed boat sub-orbital wonton soup corporation bicycle franchise. Tower dolphin
+                8-bit drone physical order-flow garage girl denim crypto-savant vinyl. DIY wristwatch office physical
+                dissident BASE jump computer.</p>
+        </div>
+        <div class="grid-item text-left">
+            <img />
+            <h1 class="title">
+                <a href="article.html?id=3">Omoda E5 in Noble trim - pictures</a>
+            </h1>
+            <p class="description">Lorem San Francisco Chiba Kowloon otaku silent fetishism monofilament girl marketing
+                man courier denim hacker wristwatch rebar. Cartel range-rover meta-assault corrupted numinous tube
+                augmented reality. 3D-printed boat sub-orbital wonton soup corporation bicycle franchise. Tower dolphin
+                8-bit drone physical order-flow garage girl denim crypto-savant vinyl. DIY wristwatch office physical
+                dissident BASE jump computer.</p>
+        </div>
+    </div>
+</main>
+
+<script src="main.js"></script>
+<script src="https://kit.fontawesome.com/6e515eb09f.js" crossorigin="anonymous"></script>

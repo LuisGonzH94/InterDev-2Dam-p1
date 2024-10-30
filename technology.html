@@ -1,0 +1,83 @@
+<link rel="stylesheet" href="style.css">
+
+<custom-search>
+    <header class="toolbar-container position-fixed">
+        <button class="menu-toggle transparent"><i class="fa-solid fa-bars"></i></button>
+        <div class="logo">
+            <!-- <span class="logo-desc">Leading Headlines Group</span> -->
+            <span >L</span>
+            <span >H</span>
+            <span >G</span>
+        </div>
+        <button class="dialog-search transparent"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </header>
+    <aside id="side-menu" class="side-menu">
+        <ul>
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li><a href="news.html" target="_blank">News</a></li>
+            <li><a href="usElection.html?id=1" target="_blank">US Election</a></li>
+            <li><a href="sport.html?id=5" target="_blank">Sport</a></li>
+            <li><a href="business.html?id=4" target="_blank">Business</a></li>
+            <li><a href="technology.html?id=10" class="active">Technology</a></li>
+            <li><a href="culture.html?id=3" target="_blank">Culture</a></li>
+            <li><a href="arts.html?id=8" target="_blank">Arts</a></li>
+            <li><a href="travel.html?id=6" target="_blank">Travel</a></li>
+            <li><a href="earth.html?id=7" target="_blank">Earth</a></li>
+        </ul>
+    </aside>
+    <dialog>
+        <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        <h1>Search</h1>
+        <input type="search" id="site-search" name="q" />
+        <template>
+            <li>
+                <div class="flex flex-col items-center card">
+                    <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg"
+                        alt="">
+                    <div class="flex flex-col justify-between">
+                        <h5 class="item-title">
+                            <a href="article.html?id={id}">
+                                {value}
+                            </a>
+                        </h5>
+                        <p class="item-description">
+                            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse
+                            chronological order.
+                        </p>
+                        <relative-time time="2024-10-25T16:32:45Z" />
+                    </div>
+                </div>
+            </li>
+        </template>
+
+        <ul id="search-results"></ul>
+    </dialog>
+</custom-search>
+
+<main>
+    <custom-article>
+        <article class="block">
+            <h1>Technology</h1>
+            <relative-time time="1729250766363"></relative-time>
+            <img src="https://placehold.co/768x400/EEE/31343C">
+            <p><span class="bold">Up to 50% of twins develop their own communication pattern with one another. Most lose it over time, but for the Youlden twins it has become a normal way of communicating.</span>
+
+                Twins Matthew and Michael Youlden speak 25 languages each. The 26th is Umeri, which they don't include in their tally. 
+                
+                If you've not heard of Umeri, there's good reason for that. Michael and Matthew are the only two people who speak, read and write it, having created it themselves as children.
+                
+                The brothers insist Umeri isn't an intentionally secret language.
+                
+                "Umeri isn't ever reduced to a language used to keep things private," they say in an email. "It definitely has a very sentimental value to us, as it reflects the deep bond we share as identical twins."
+                
+                An estimated 30-50% of twins develop a shared language or particular communication pattern that is only comprehensible to them, known as cryptophasia. The term translates directly from Greek as secret speech.
+                
+                Nancy Segal, director of the Twin Studies Center at California State University, believes there are now better and more nuanced words for the phenomenon, and prefers to use "private speech". In her book Twin Mythconceptions, Segal also uses the phrase "shared verbal understanding" to refer to speech used within the pair.
+                
+                "Based on available studies, it is safe to say that about 40% of twin toddlers engage in some form of 'twin-speak'," writes Segal. "But that figure does not convey just how complex twins' language development turns out to be."</p>
+        </article>
+    </custom-article>
+</main>
+
+<script src="main.js"></script>
+<script src="https://kit.fontawesome.com/6e515eb09f.js" crossorigin="anonymous"></script>

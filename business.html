@@ -1,0 +1,83 @@
+<link rel="stylesheet" href="style.css">
+
+<custom-search>
+    <header class="toolbar-container position-fixed">
+        <button class="menu-toggle transparent"><i class="fa-solid fa-bars"></i></button>
+        <div class="logo">
+            <!-- <span class="logo-desc">Leading Headlines Group</span> -->
+            <span >L</span>
+            <span >H</span>
+            <span >G</span>
+        </div>
+        <button class="dialog-search transparent"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </header>
+    <aside id="side-menu" class="side-menu">
+        <ul>
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li><a href="news.html" target="_blank">News</a></li>
+            <li><a href="usElection.html?id=1" target="_blank">US Election</a></li>
+            <li><a href="sport.html?id=5" target="_blank">Sport</a></li>
+            <li><a href="business.html?id=4" class="active">Business</a></li>
+            <li><a href="technology.html?id=10" target="_blank">technology</a></li>
+            <li><a href="culture.html?id=3" target="_blank">Culture</a></li>
+            <li><a href="arts.html?id=8" target="_blank">Arts</a></li>
+            <li><a href="travel.html?id=6" target="_blank">Travel</a></li>
+            <li><a href="earth.html?id=7" target="_blank">Earth</a></li>
+        </ul>
+    </aside>
+    <dialog>
+        <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        <h1>Search</h1>
+        <input type="search" id="site-search" name="q" />
+        <template>
+            <li>
+                <div class="flex flex-col items-center card">
+                    <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg"
+                        alt="">
+                    <div class="flex flex-col justify-between">
+                        <h5 class="item-title">
+                            <a href="article.html?id={id}">
+                                {value}
+                            </a>
+                        </h5>
+                        <p class="item-description">
+                            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse
+                            chronological order.
+                        </p>
+                        <relative-time time="2024-10-27T06:25:24Z" />
+                    </div>
+                </div>
+            </li>
+        </template>
+
+        <ul id="search-results"></ul>
+    </dialog>
+</custom-search>
+
+<main>
+    <custom-article>
+        <article class="block">
+            <h1>Business</h1>
+            <relative-time time="1729250766363"></relative-time>
+            <img src="https://placehold.co/768x400/EEE/31343C">
+            <p>"Google essentially disappeared us from the internet."
+
+                Launch days. They’re equal parts thrilling and terrifying for many start-up business founders, but they don’t get much worse than the one Shivaun Raff and her husband, Adam, experienced.
+                
+                It was June 2006 and the couple’s trailblazing price comparison website Foundem - one they had sacrificed well-paid jobs for and built from scratch - had just gone fully live.
+                
+                They didn’t know it at the time but that day, and those that followed, would mark the beginning of the end for their company.
+                
+                Foundem had been hit by a Google search penalty, prompted by one of the search engine’s automatic spam filters. It pushed the website way down the lists of search results for relevant queries like "price comparison" and "comparison shopping".
+                
+                It meant the couple’s website, which charged a fee when customers clicked on their product listings through to other websites, struggled to make any money.
+                
+                "We were monitoring our pages and how they were ranking, and then we saw them all plummet almost immediately, " says Adam.
+                
+                While the launch day for Foundem didn't go to plan, it would lead to the start of something else – a 15-year legal battle that culminated in a then <span class="bold">record €2.4bn (£2bn) fine for Google, which was deemed to have abused its market dominance.</span></p>
+        </article>
+    </custom-article>
+</main>
+
+<script src="main.js"></script>
+<script src="https://kit.fontawesome.com/6e515eb09f.js" crossorigin="anonymous"></script>

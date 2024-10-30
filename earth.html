@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="style.css">
+
+<custom-search>
+    <header class="toolbar-container position-fixed">
+        <button class="menu-toggle transparent"><i class="fa-solid fa-bars"></i></button>
+        <div class="logo">
+            <!-- <span class="logo-desc">Leading Headlines Group</span> -->
+            <span >L</span>
+            <span >H</span>
+            <span >G</span>
+        </div>
+        <button class="dialog-search transparent"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </header>
+    <aside id="side-menu" class="side-menu">
+        <ul>
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li><a href="news.html" target="_blank">News</a></li>
+            <li><a href="usElection.html?id=1" target="_blank">US Election</a></li>
+            <li><a href="sport.html?id=5" target="_blank">Sport</a></li>
+            <li><a href="business.html?id=4" target="_blank">Business</a></li>
+            <li><a href="technology.html?id=10" target="_blank">Technology</a></li>
+            <li><a href="culture.html?id=3" target="_blank">Culture</a></li>
+            <li><a href="arts.html?id=8" target="_blank">Arts</a></li>
+            <li><a href="travel.html?id=6" target="_blank">Travel</a></li>
+            <li><a href="earth.html?id=7" class="active">Earth</a></li>
+        </ul>
+    </aside>
+    <dialog>
+        <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        <h1>Search</h1>
+        <input type="search" id="site-search" name="q" />
+        <template>
+            <li>
+                <div class="flex flex-col items-center card">
+                    <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg"
+                        alt="">
+                    <div class="flex flex-col justify-between">
+                        <h5 class="item-title">
+                            <a href="article.html?id={id}">
+                                {value}
+                            </a>
+                        </h5>
+                        <p class="item-description"><a href="article.html?description={id}"></a>
+                            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse
+                            chronological order.
+                        </p>
+                        <relative-time time="2024-10-27T06:00:00Z" />
+                    </div>
+                </div>
+            </li>
+        </template>
+
+        <ul id="search-results"></ul>
+    </dialog>
+</custom-search>
+
+<main>
+    <custom-article>
+        <article class="block">
+            <h1>Earth</h1>
+            <relative-time time="1729250766363"></relative-time>
+            <img src="https://placehold.co/768x400/EEE/31343C">
+            <p><span class="bold">These people are rebuilding homes lost to wildfires in the western US – only this time they are using a material that they hope won't burn.</span>
+
+                Melanie Glover's back window opens to a sweeping view of the Rocky Mountains. When she rebuilt her home in summer 2024, she wanted to keep this view.
+                
+                On 30 December 2021, rapidly moving winds had carried hot flames across these plains to her neighbourhood in the Denver suburb of Superior, Colorado, destroying her home and nearly 1,000 others. Her husband, Matteo Rebeschini, and children were trapped in the front foyer for 30 minutes as their house burned, before escaping unharmed once the fire passed.
+                
+                The fire brought trauma that lasts to this day, but Glover and Rebeschini were determined to rebuild. So they did – only this time, they used earth blocks.
+                
+                "We want to be able to feel safe," says Glover. "We wanted to build a house so that if something like this happens again, we have time."</p>
+        </article>
+    </custom-article>
+</main>
+
+<script src="main.js"></script>
+<script src="https://kit.fontawesome.com/6e515eb09f.js" crossorigin="anonymous"></script>

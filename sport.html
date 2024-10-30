@@ -1,0 +1,83 @@
+<link rel="stylesheet" href="style.css">
+
+<custom-search>
+    <header class="toolbar-container position-fixed">
+        <button class="menu-toggle transparent"><i class="fa-solid fa-bars"></i></button>
+        <div class="logo">
+            <!-- <span class="logo-desc">Leading Headlines Group</span> -->
+            <span >L</span>
+            <span >H</span>
+            <span >G</span>
+        </div>
+        <button class="dialog-search transparent"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </header>
+    <aside id="side-menu" class="side-menu">
+        <ul>
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li><a href="news.html" target="_blank">News</a></li>
+            <li><a href="usElection.html?id=1" target="_blank">US Election</a></li>
+            <li><a href="sport.html?id=5" class="active">Sport</a></li>
+            <li><a href="business.html?id=4" target="_blank">Business</a></li>
+            <li><a href="technology.html?id=10" target="_blank">Technology</a></li>
+            <li><a href="culture.html?id=3" target="_blank">Culture</a></li>
+            <li><a href="arts.html?id=8" target="_blank">Arts</a></li>
+            <li><a href="travel.html?id=6" target="_blank">Travel</a></li>
+            <li><a href="earth.html?id=7" target="_blank">Earth</a></li>
+        </ul>
+    </aside>
+    <dialog>
+        <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        <h1>Search</h1>
+        <input type="search" id="site-search" name="q" />
+        <template>
+            <li>
+                <div class="flex flex-col items-center card">
+                    <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg"
+                        alt="">
+                    <div class="flex flex-col justify-between">
+                        <h5 class="item-title">
+                            <a href="article.html?id={id}">
+                                {value}
+                            </a>
+                        </h5>
+                        <p class="item-description">
+                            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse
+                            chronological order.
+                        </p>
+                        <relative-time time="2024-10-27T10:22:56Z0" />
+                    </div>
+                </div>
+            </li>
+        </template>
+
+        <ul id="search-results"></ul>
+    </dialog>
+</custom-search>
+
+<main>
+    <custom-article>
+        <article class="block">
+            <h1>Sports</h1>
+            <relative-time time="1729250766363"></relative-time>
+            <img src="https://placehold.co/768x400/EEE/31343C">
+            <p><span class="bold">Teenage forward Lamine Yamal was among Barcelona players targeted by racist abuse during Saturday's El Clasico against Real Madrid at the Bernabeu.</span>
+
+                Videos on social media appear to show the 17-year-old Spaniard being taunted by a section of home fans as he celebrated his 77th-minute goal by pointing to his name on the back of his shirt.
+                
+                Robert Lewandowski netted twice and Raphinha completed the scoring as Barcelona cruised to a 4-0 win to move six points above their rivals at the top of La Liga.
+                
+                Both Real Madrid and La Liga condemned the abuse, but did not specify which Barcelona players had been targeted.
+                
+                However, Real's Brazil forward Vinicius Jr mentioned three Barca players - Yamal, Raphinha and Ansu Fati - in a statement on social media platform X.
+                
+                "It's regrettable what happened yesterday at the Bernabeu with racist insults," Vinicius said.
+                
+                "There is no place for these criminals in our society. All my support to Lamine, Ansu and Raphinha.
+                
+                "I know that Madrid and the police will do things to identify and punish the guilty!"</p>
+        </article>
+    </custom-article>
+</main>
+
+<script src="main.js"></script>
+<script src="https://kit.fontawesome.com/6e515eb09f.js" crossorigin="anonymous"></script>

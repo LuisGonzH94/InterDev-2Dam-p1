@@ -1,0 +1,9 @@
+Propósito: Crear una página de noticias utilizando Web Components, Custom Elements y Templates.
+
+Requisitos:
+
+Crear un toobar con el logo centrado como en la imágen de abajo.
+Crear un grid de noticias con la imagen, título y descripción.
+Crear un componente para la fecha de publicación de la noticia (ej: 4 min ago).
+Crear un componente para el buscador de noticias.
+Utilizar Templates <template> para la lista en la búsqueda de noticias.

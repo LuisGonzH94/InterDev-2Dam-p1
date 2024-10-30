@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Desarrollo Interfaces</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <custom-search>
+        <header class="toolbar-container ">
+            <button class="menu-toggle transparent"><i class="fa-solid fa-bars"></i></button>
+            <div class="logo">
+                <!-- <span class="logo-desc">Leading Headlines Group</span> -->
+                <span>L</span>
+                <span>H</span>
+                <span>G</span>
+            </div>
+            <button class="dialog-search transparent"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </header>
+        <aside id="side-menu" class="side-menu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="news.html" target="_blank">News</a></li>
+                <li><a href="usElection.html?id=1" target="_blank">US Election</a></li>
+                <li><a href="sport.html?id=5" target="_blank">Sport</a></li>
+                <li><a href="business.html?id=4" target="_blank">Business</a></li>
+                <li><a href="technology.html?id=10" target="_blank">Technology</a></li>
+                <li><a href="culture.html?id=3" target="_blank">Culture</a></li>
+                <li><a href="arts.html?id=8" target="_blank">Arts</a></li>
+                <li><a href="travel.html?id=6" target="_blank">Travel</a></li>
+                <li><a href="earth.html?id=7" target="_blank">Earth</a></li>
+            </ul>
+        </aside>
+        <dialog>
+            <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+            <h1>Search</h1>
+            <input type="search" id="site-search" name="q" />
+            <template>
+                <li>
+                    <div class="flex flex-col items-center card">
+                        <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg"
+                            alt="">
+                        <div class="flex flex-col justify-between">
+                            <h5 class="item-title">
+                                <a href="article.html?id={id}">
+                                    {value}
+                                </a>
+                            </h5>
+                            <p class="item-description">
+                                Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse
+                                chronological order.
+                            </p>
+                            <relative-time time="Fri Oct 25 2024 22:45:50 GMT+0200" />
+                        </div>
+                    </div>
+                </li>
+            </template>
+
+            <ul id="search-results"></ul>
+        </dialog>
+    </custom-search>
+    <section class="grid-container">
+        <div class="grid-items item1">
+            <div class="flex-container flex1">
+                <div class="content-desc texto1">
+                    <h1>
+                        <a href="usElection.html?id=1">
+                            What’s really behind America’s men vs women election
+                        </a>
+                    </h1>
+                    <p>
+                        With polls showing a stark gender divide, the race is shaping up to be a battle of the sexes.
+                        Why?
+                    </p>
+                    <span>
+                        <relative-time time="2024-10-30T06:00:00Z" />
+                        <span>|</span>
+                        <span>USA & Canada</span>
+                    </span>
+                </div>
+                <div class="imagenes img1">
+                    <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/bdfc/live/b3ea0cc0-93ec-11ef-8e6d-e3e64e16c628.png.webp"
+                        alt=""/>
+                </div>
+            </div>
+        </div>
+        <!-- GRID ITEM 2 CONTIENE 2 FLEX ITEMS (Column dir)-->
+        <div class="grid-items item2">
+            <div class="flex-container flex-column">
+                <div class="grid-item2-flex1">
+                    <div class="imagenes img2">
+                        <img src="https://ichef.bbci.co.uk/images/ic/800x450/p0k06spv.jpg.webp" alt="" />
+                    </div>
+                    <div class="content-desc texto2">
+                        <h1>
+                            <!-- https://www.bbc.com/future/article/20241025-do-twins-have-a-secret-language -->
+                            <a href="technology.html?id=2">
+                                The twins who invent their own language
+                            </a>
+                        </h1>
+                        <p>
+                            Up to 50% of twins develop their own communication pattern with one another. Most lose it
+                            over time, but for the Youlden twins it has become a normal way of communicating.
+                        </p>
+                        <span>
+                            <relative-time time="2024-10-25T06:00:00Z" />
+                            <span>|</span>
+                            <span>Innovation</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="grid-item2-flex2">
+                    <div class="imagenes img3">
+                        <img src="https://ichef.bbci.co.uk/images/ic/800xn/p0jzxv20.jpg.webp" alt="" />
+                    </div>
+                    <div class="content-desc texto3">
+                        <h1>
+                            <!-- https://www.bbc.com/culture/article/20241024-the-remarkable-story-of-the-boy-who-lived-a-secret-life-in-world-of-warcraft -->
+                            <a href="culture.html?id=3">
+                                The boy who lived a secret life in World of Warcraft
+                            </a>
+                        </h1>
+                        <p>
+                            A new documentary, The Remarkable Life of Ibelin, explores the friendships a disabled boy
+                            forged in an online game – without his family knowing.
+                        </p>
+                        <span>
+                            <relative-time time="2024-10-27T06:00:00Z" />
+                            <span>|</span>
+                            <span>Culture</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- GRID ITEM 3 CONTIENE 1 FLEX ITEMS -->
+        <div class="grid-items item3">
+            <div class="flex-container">
+                <div class="imagenes img2">
+                    <img src="https://ichef.bbci.co.uk/images/ic/800x450/p0k06spv.jpg.webp" alt="" />
+                </div>
+                <div class="content-desc texto4">
+                    <!-- https://www.bbc.com/news/articles/cjr431lr72jo -->
+                    <h1>
+                        <a href="business.html?id=4">
+                            The couple who took on Google and cost the tech giant £2bn
+                        </a>
+                    </h1>
+                    <p>
+                        Shivaun Raff and her husband, Adam, describe their long court battle with technology giant
+                        Google.
+                    </p>
+                    <span>
+                        <relative-time time="2024-10-27T06:00:00Z" />
+                        <span>|</span>
+                        <span>Business</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- GRID ITEM 4 CONTIENE 1 FLEX ITEMS -->
+        <div class="grid-items item4">
+            <div class="flex-container">
+                <div class="imagenes img3">
+                    <img src="https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/0361/live/f7c8ab80-9451-11ef-9357-afc2b724fb78.jpg.webp"
+                        alt="" />
+                </div>
+                <div class="content-desc texto5">
+                    <!-- https://www.bbc.com/sport/football/articles/cdxyywepw6yo -->
+                    <h1>
+                        <a href="sport.html?id=5">
+                            La Liga & Real condemn racist abuse of Barca players
+                        </a>
+                    </h1>
+                    <p>
+                        Teenage forward Lamine Yamal was among Barcelona players targeted by racist abuse during
+                        Saturday's El Clasico against Real Madrid at the Bernabeu.
+                    </p>
+                    <span>
+                        <relative-time time="2024-10-27T06:00:00Z" />
+                        <span>|</span>
+                        <span>Sports</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-items item5">
+            <div class="flex-container flex-row">
+                <div class="grid-item5-flex1">
+                    <div class="content-desc texto6">
+                        <!-- https://www.bbc.com/travel/article/20241024-tortellini-the-mystery-of-one-of-italys-most-iconic-pastas -->
+                        <h1>
+                            <a href="travel.html?id=6">
+                                The mystery of one of Italy's most iconic pastas
+                            </a>
+                        </h1>
+                        <p>
+                            For centuries, residents of Emilia-Romagna have disagreed about which of its two main cities
+                            invented tortellini, but the truth may be neither did.
+                        </p>
+                        <span>
+                            <relative-time time="2024-10-27T06:00:00Z" />
+                            <span>|</span>
+                            <span>Travel</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="grid-item5-flex2">
+                    <div class="content-desc texto7">
+                        <!-- https://www.bbc.com/future/article/20241018-fire-proof-houses-and-the-people-rebuilding-their-homes-using-earth -->
+                        <h1>
+                            <a href="earth.html?id=7">
+                                'Dirt doesn't burn': The people rebuilding their homes with earth
+                            </a>
+                        </h1>
+                        <p>
+                            These people are rebuilding homes lost to wildfires in the western US – only this time they
+                            are using a material that they hope won't burn.
+                        </p>
+                        <span>
+                            <relative-time time="2024-10-27T06:00:00Z" />
+                            <span>|</span>
+                            <span>Earth</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="grid-item5-flex3">
+                    <div class="content-desc texto8">
+                        <!-- https://www.bbc.com/culture/article/20241018-how-monets-paintings-changed-the-way-we-see-london -->
+                        <h1>
+                            <a href="arts.html?id=8">
+                                The paintings that changed the way we see London
+                            </a>
+                        </h1>
+                        <p>
+                            A new exhibition charts how Claude Monet's revolutionary, fog-shrouded visions of the Thames
+                            would "irreversibly alter how London saw itself"
+                        </p>
+                        <span>
+                            <relative-time time="2024-10-25T10:30:56Z" />
+                            <span>|</span>
+                            <span>Arts</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="grid-item5-flex4">
+                    <div class="content-desc texto9">
+                        <!-- https://www.bbc.com/news/articles/cly3ylwg4eqo -->
+                        <h1>
+                            <a href="article.html?id=9">
+                                Putin gathers allies to show West's pressure isn’t working
+                            </a>
+                        </h1>
+                        <p>
+                            Russian President Vladimir Putin is welcoming more than 20 world leaders to the Brics
+                            summit. Among the leaders invited are China’s Xi Jinping.
+                        </p>
+                        <span>
+                            <relative-time time="2024-10-27T06:00:00Z" />
+                            <span>|</span>
+                            <span>News</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="main.js"></script>
+<script src="https://kit.fontawesome.com/6e515eb09f.js" crossorigin="anonymous"></script>
+
+</html>

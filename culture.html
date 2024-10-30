@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="style.css">
+
+<custom-search>
+    <header class="toolbar-container position-fixed">
+        <button class="menu-toggle transparent"><i class="fa-solid fa-bars"></i></button>
+        <div class="logo">
+            <!-- <span class="logo-desc">Leading Headlines Group</span> -->
+            <span >L</span>
+            <span >H</span>
+            <span >G</span>
+        </div>
+        <button class="dialog-search transparent"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </header>
+    <aside id="side-menu" class="side-menu">
+        <ul>
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li><a href="news.html" target="_blank">News</a></li>
+            <li><a href="usElection.html?id=1" target="_blank">US Election</a></li>
+            <li><a href="sport.html?id=5" target="_blank">Sport</a></li>
+            <li><a href="business.html?id=4" target="_blank">Business</a></li>
+            <li><a href="technology.html?id=10" target="_blank">Technology</a></li>
+            <li><a href="culture.html?id=3" class="active">Culture</a></li>
+            <li><a href="arts.html?id=8" target="_blank">Arts</a></li>
+            <li><a href="travel.html?id=6" target="_blank">Travel</a></li>
+            <li><a href="earth.html?id=7" target="_blank">Earth</a></li>
+        </ul>
+    </aside>
+    <dialog>
+        <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        <h1>Search</h1>
+        <input type="search" id="site-search" name="q" />
+        <template>
+            <li>
+                <div class="flex flex-col items-center card">
+                    <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg"
+                        alt="">
+                    <div class="flex flex-col justify-between">
+                        <h5 class="item-title">
+                            <a href="article.html?id={id}">
+                                {value}
+                            </a>
+                        </h5>
+                        <p class="item-description">
+                            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse
+                            chronological order.
+                        </p>
+                        <relative-time time="2024-10-27T10:30:56Z" />
+                    </div>
+                </div>
+            </li>
+        </template>
+
+        <ul id="search-results"></ul>
+    </dialog>
+</custom-search>
+
+<main>
+    <custom-article>
+        <article class="block">
+            <h1>Culture</h1>
+            <relative-time time="1729250766363"></relative-time>
+            <img src="https://placehold.co/768x400/EEE/31343C">
+            <p><span class="bold">In new documentary The Remarkable Life of Ibelin, a Norwegian couple talks about the rich experiences their disabled son had online in the World of Warcraft game – without their knowledge.</span>
+
+                When Mats Steen died at the age of 25 in 2014 from a degenerative muscular disease, his parents, Robert and Trude Steen, were surprised to be contacted at their home in Norway by people from all over Europe, mourning his loss. The Steens knew that their son was an avid gamer, but they'd not grasped that for nearly a decade, he had had another virtual life in the game World of Warcraft. The story of Mats, and his avatar Ibelin, is now being told in a documentary, The Remarkable Life of Ibelin. 
+                
+                "I leave this world, and I spend most of my time in a distant world called Azeroth," begins Mats Steen in the film, his words spoken by an actor, introducing the audience to the virtual landscape familiar to players of World of Warcraft. "In there," he continues, "my chains are broken, and I can be whoever I want to be." 
+                
+                To discover that their son, who had Duchenne Muscular Dystrophy (DMD) and used a wheelchair for much of his life, experienced much of what other young people his age did – socialising, friendship, love – was a revelation to his parents. "He was born more than 35 years ago now, we lived under the same roof as him for 25 years, four months and 15 days," Robert Steen tells the BBC. "Then he died having suffered quite severely from the disease that he was born with. And we believed that he lived a lonely and isolated life, without experiencing love or being important or making a difference in the lives of other people, because that is all we saw. The day after his passing, we inserted a small post into his blog saying he'd passed away, as we thought we ought to, since he spent so much time in the gaming world. That's when emails started to come in telling of [people's] strong relationships with Mats. And that was the turning point of our own life. His death was also the beginning of the story, because in the 10 years since he's passed, we've learned so much about his life."</p>
+        </article>
+    </custom-article>
+</main>
+
+<script src="main.js"></script>
+<script src="https://kit.fontawesome.com/6e515eb09f.js" crossorigin="anonymous"></script>
